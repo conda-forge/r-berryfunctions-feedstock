@@ -1,4 +1,4 @@
-{% set version = '1.21.14' %}
+{% set version = "1.22.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/berryFunctions_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/berryFunctions/berryFunctions_{{ version }}.tar.gz
-  sha256: 91a08d1a05b133325765a5998fcb97282394b32af6990d4de35217faca9bf0b7
+  sha256: 8d8578d746e8e4f7a1deb0b1d49ff8603c5e51504d5fe549bcba54f20fe9d498
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -39,10 +39,7 @@ test:
 about:
   home: https://github.com/brry/berryFunctions
   license: GPL-2.0-or-later
-  summary: Draw horizontal histograms, color scattered points by 3rd dimension, enhance date-
-    and log-axis plots, zoom in X11 graphics, trace errors and warnings, use the unit
-    hydrograph in a linear storage cascade, convert lists to data.frames and arrays,
-    fit multiple functions.
+  summary: Draw horizontal histograms, color scattered points by 3rd dimension, enhance date- and log-axis plots, zoom in X11 graphics, trace errors and warnings, use the unit hydrograph in a linear storage cascade, convert lists to data.frames and arrays, fit multiple functions.
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
