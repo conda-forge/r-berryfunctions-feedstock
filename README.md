@@ -1,11 +1,11 @@
-About r-berryfunctions
-======================
+About r-berryfunctions-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-berryfunctions-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/brry/berryFunctions
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-berryfunctions-feedstock/blob/main/LICENSE.txt)
 
 Summary: Draw horizontal histograms, color scattered points by 3rd dimension, enhance date- and log-axis plots, zoom in X11 graphics, trace errors and warnings, use the unit hydrograph in a linear storage cascade, convert lists to data.frames and arrays, fit multiple functions.
 
