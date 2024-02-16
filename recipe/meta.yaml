@@ -1,4 +1,4 @@
-{% set version = "1.22.0" %}
+{% set version = "1.22.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/berryFunctions_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/berryFunctions/berryFunctions_{{ version }}.tar.gz
-  sha256: 8d8578d746e8e4f7a1deb0b1d49ff8603c5e51504d5fe549bcba54f20fe9d498
+  sha256: 3360bdc4c73d1d7daccc134e8b959b50bf58a67bbbf3186fc5efb5a020caa1cd
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
